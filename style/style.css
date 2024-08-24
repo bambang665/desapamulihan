@@ -90,3 +90,44 @@ img {
     background-color: #004d00;
     border-color: #004d00;
 }
+
+/* Kontras yang lebih baik untuk teks */
+.bg-light {
+    background-color: #f8f9fa !important;
+    color: #333;
+    /* Teks dengan kontras lebih tinggi */
+}
+
+/* Teks alternatif untuk gambar */
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* Menambahkan gaya untuk elemen fokus */
+:focus {
+    outline: 3px solid #006400;
+    /* Warna outline saat elemen fokus */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #343a40;
+    /* Warna latar belakang footer */
+    color: #ffffff;
+    /* Warna teks footer */
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer .bi {
+    font-size: 1.5rem;
+    /* Ukuran ikon sosial media */
+}
