@@ -7,6 +7,8 @@
     <title>Desa Pamulihan</title>
     <link rel="stylesheet" href="style/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -145,17 +147,31 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="card">
+                        <img src="news1.jpg" class="card-img-top" alt="Berita 1">
                         <div class="card-body">
                             <h5 class="card-title">Berita 1</h5>
-                            <p class="card-text">Deskripsi singkat tentang berita desa...</p>
+                            <p class="card-text">Deskripsi singkat tentang berita terbaru di desa...</p>
                             <a href="#" class="btn btn-primary">Baca Selengkapnya</a>
                         </div>
                     </div>
                 </div>
-                <!-- Tambahkan lebih banyak berita -->
+                <!-- Tambahkan berita lainnya di sini -->
             </div>
         </div>
     </section>
+
+    <!-- Public Services Information Section -->
+    <section id="services" class="p-5">
+        <div class="container">
+            <h2>Informasi Layanan Publik</h2>
+            <ul>
+                <li><strong>Jadwal Pelayanan Administrasi:</strong> Senin-Jumat, 08:00 - 15:00</li>
+                <li><strong>Prosedur Pengurusan KTP:</strong> Bawa fotokopi KK, pas foto, dan formulir pengajuan.</li>
+                <!-- Tambahkan informasi lainnya di sini -->
+            </ul>
+        </div>
+    </section>
+
 
     <!-- Gallery Section -->
     <section id="gallery" class="p-5">
@@ -169,6 +185,30 @@
             </div>
         </div>
     </section>
+
+    <!-- Forum Section -->
+    <section id="forum" class="p-5">
+        <div class="container">
+            <h2>Forum Aspirasi</h2>
+            <form id="forumForm">
+                <div class="mb-3">
+                    <label for="forumName" class="form-label">Nama</label>
+                    <input type="text" class="form-control" id="forumName" required>
+                </div>
+                <div class="mb-3">
+                    <label for="forumMessage" class="form-label">Aspirasi</label>
+                    <textarea class="form-control" id="forumMessage" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Kirim</button>
+            </form>
+            <hr>
+            <h3>Diskusi Terbaru:</h3>
+            <div id="forumPosts">
+                <!-- Daftar postingan forum akan muncul di sini -->
+            </div>
+        </div>
+    </section>
+
 
     <!-- Contact Section -->
     <section id="contact" class="p-5 bg-light">
@@ -191,6 +231,60 @@
             </form>
         </div>
     </section>
+
+    <!-- Feedback Section -->
+    <section id="feedback" class="p-5 bg-light">
+        <div class="container">
+            <h2>Umpan Balik</h2>
+            <form id="feedbackForm">
+                <div class="mb-3">
+                    <label for="feedbackName" class="form-label">Nama</label>
+                    <input type="text" class="form-control" id="feedbackName" required>
+                </div>
+                <div class="mb-3">
+                    <label for="feedbackMessage" class="form-label">Komentar</label>
+                    <textarea class="form-control" id="feedbackMessage" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Kirim Umpan Balik</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5>Kontak Kami</h5>
+                    <p>
+                        Desa Pamulihan, Kabupaten XYZ<br>
+                        Tel: (021) 12345678<br>
+                        Email: info@desapamulihan.id
+                    </p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Ikuti Kami</h5>
+                    <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i> Facebook</a>
+                    <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i> Twitter</a>
+                    <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i> Instagram</a>
+                    <!-- Tambahkan ikon sosial media lainnya jika diperlukan -->
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Informasi Berguna</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#home" class="text-white">Beranda</a></li>
+                        <li><a href="#news" class="text-white">Berita</a></li>
+                        <li><a href="#services" class="text-white">Layanan Publik</a></li>
+                        <li><a href="#contact" class="text-white">Kontak</a></li>
+                        <li><a href="#forum" class="text-white">Forum</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <p>&copy; 2024 Desa Pamulihan. Semua Hak Dilindungi.</p>
+        </div>
+    </footer>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
