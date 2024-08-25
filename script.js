@@ -59,3 +59,62 @@ document.addEventListener("DOMContentLoaded", function () {
     feedbackForm.reset();
   });
 });
+document.getElementById("forumForm").addEventListener("submit", function (e) {
+  e.preventDefault(); // Prevent default form submission
+
+  fetch(e.target.action, {
+    method: "POST",
+    body: new FormData(e.target),
+  }).then((response) => {
+    if (response.ok) {
+      document.getElementById("forumAlert").style.display = "block"; // Show success message
+      setTimeout(() => {
+        document.getElementById("forumAlert").style.display = "none";
+      }, 3000);
+      e.target.reset(); // Reset form fields
+    }
+  });
+});
+
+document
+  .getElementById("feedbackForm")
+  .addEventListener("submit", function (e) {
+    e.preventDefault(); // Prevent default form submission
+
+    fetch(e.target.action, {
+      method: "POST",
+      body: new FormData(e.target),
+    }).then((response) => {
+      if (response.ok) {
+        document.getElementById("feedbackAlert").style.display = "block"; // Show success message
+        setTimeout(() => {
+          document.getElementById("feedbackAlert").style.display = "none";
+        }, 3000);
+        e.target.reset(); // Reset form fields
+      }
+    });
+  });
+$(document).ready(function () {
+  $(".news-carousel").slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: true,
+    infinite: false,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  });
+});
