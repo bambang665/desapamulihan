@@ -186,69 +186,31 @@
         </div>
     </section>
 
-    <!-- Forum Section -->
-    <section id="forum" class="p-5">
-        <div class="container">
-            <h2>Forum Aspirasi</h2>
-            <form id="forumForm">
-                <div class="mb-3">
-                    <label for="forumName" class="form-label">Nama</label>
-                    <input type="text" class="form-control" id="forumName" required>
-                </div>
-                <div class="mb-3">
-                    <label for="forumMessage" class="form-label">Aspirasi</label>
-                    <textarea class="form-control" id="forumMessage" rows="3" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Kirim</button>
-            </form>
-            <hr>
-            <h3>Diskusi Terbaru:</h3>
-            <div id="forumPosts">
-                <!-- Daftar postingan forum akan muncul di sini -->
-            </div>
-        </div>
-    </section>
+    <!-- Forum Aspirasi Form -->
+<form action="YOUR_WEB_APP_URL" method="post">
+    <div class="mb-3">
+        <label for="forumName" class="form-label">Nama</label>
+        <input type="text" class="form-control" id="forumName" name="forumName" required>
+    </div>
+    <div class="mb-3">
+        <label for="forumMessage" class="form-label">Aspirasi</label>
+        <textarea class="form-control" id="forumMessage" name="forumMessage" rows="3" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Kirim</button>
+</form>
 
-
-    <!-- Contact Section -->
-    <section id="contact" class="p-5 bg-light">
-        <div class="container">
-            <h2>Kontak</h2>
-            <form id="contactForm">
-                <div class="mb-3">
-                    <label for="name" class="form-label">Nama</label>
-                    <input type="text" class="form-control" id="name" required>
-                </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" required>
-                </div>
-                <div class="mb-3">
-                    <label for="message" class="form-label">Pesan</label>
-                    <textarea class="form-control" id="message" rows="3" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Kirim</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- Feedback Section -->
-    <section id="feedback" class="p-5 bg-light">
-        <div class="container">
-            <h2>Umpan Balik</h2>
-            <form id="feedbackForm">
-                <div class="mb-3">
-                    <label for="feedbackName" class="form-label">Nama</label>
-                    <input type="text" class="form-control" id="feedbackName" required>
-                </div>
-                <div class="mb-3">
-                    <label for="feedbackMessage" class="form-label">Komentar</label>
-                    <textarea class="form-control" id="feedbackMessage" rows="3" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Kirim Umpan Balik</button>
-            </form>
-        </div>
-    </section>
+<!-- Feedback Form -->
+<form action="YOUR_WEB_APP_URL" method="post">
+    <div class="mb-3">
+        <label for="feedbackName" class="form-label">Nama</label>
+        <input type="text" class="form-control" id="feedbackName" name="feedbackName" required>
+    </div>
+    <div class="mb-3">
+        <label for="feedbackMessage" class="form-label">Komentar</label>
+        <textarea class="form-control" id="feedbackMessage" name="feedbackMessage" rows="3" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Kirim Umpan Balik</button>
+</form>
 
     <!-- Footer Section -->
     <footer class="bg-dark text-white text-center py-4">
