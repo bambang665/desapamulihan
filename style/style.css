@@ -131,3 +131,24 @@ footer .bi {
     font-size: 1.5rem;
     /* Ukuran ikon sosial media */
 }
+
+.news-carousel {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px 0;
+}
+
+.news-carousel .card {
+    min-width: 300px;
+    margin-right: 15px;
+}
+
+.news-carousel .card img {
+    width: 100%;
+    height: auto;
+}
+
+.slick-prev,
+.slick-next {
+    z-index: 1;
+}
